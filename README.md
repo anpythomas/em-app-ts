@@ -1,5 +1,5 @@
 # Event Pro API
-This is a RESTful API built with Node.js, Express, TypeScript, and MongoDB. It provides endpoints to manage Users and Events. It's designed to serve data to a front-end application where the rendering happens.
+A RESTful API built with Node.js, Express, TypeScript, and MongoDB. It provides endpoints to manage Users and Events. It's designed to serve data to a front-end application where the rendering happens.
 
 ## Technologies Used
 - Node.js
@@ -12,15 +12,15 @@ This is a RESTful API built with Node.js, Express, TypeScript, and MongoDB. It p
 - MongoDB instance (local or cloud)
 
 ### Installation
-Clone the repository:
-git clone https://github.com/Event-Pro-Solutions/api
+Clone the repository:  
+git clone https://github.com/anpythomas/em-app-ts
 
-Install the dependencies:
+Install the dependencies:  
 npm install
 
 ### Environment Variables
-Create a .env file in the root directory and set the following variables:
-DB_STRING=<your_mongodb_connection_string>
+Create a .env file in the root directory and set the following variables:  
+DB_STRING=<your_mongodb_connection_string>  
 PORT=<port_to_run_the_server_on>
 
 ### API Documentation
