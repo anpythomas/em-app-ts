@@ -29,7 +29,7 @@ GET /users            Fetch all users
 GET /users/:id        Fetch a single user by id  
 POST /users           Create a new user  
 
-Event Routes
+Event Routes  
 GET /                 Fetch all events  
 GET /events/:id       Fetch a single event by id  
 POST /events          Create a new event  
