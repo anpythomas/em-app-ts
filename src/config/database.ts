@@ -1,8 +1,9 @@
 import mongoose from 'mongoose';
+import { env } from '../config';
 
 const connectDB = async () => {
   try {
-    const dbString = process.env.DB_STRING;
+    const dbString = env.DB_STRING;
     if (!dbString) {
       throw new Error('DB_STRING environment variable is not defined.');
     }
