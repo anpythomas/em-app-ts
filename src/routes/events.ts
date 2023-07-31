@@ -3,7 +3,6 @@ import EventController from '../controllers/EventController';
 
 const router = Router();
 
-router.get('/', EventController.getAllEvents);
-router.get('/events/:id', EventController.getEventById);
+router.get('/:id', EventController.getEventById);
 
 export default router;

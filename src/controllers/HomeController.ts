@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import Event, { IEvent } from '../models/Event';
 
-class HomeController {
+class EventController {
   static async getAllEvents(req: Request, res: Response) {
     try {
       const events: IEvent[] = await Event.find({});
@@ -12,4 +12,4 @@ class HomeController {
   }
 }
 
-export default HomeController;
+export default EventController;
