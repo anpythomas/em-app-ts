@@ -24,19 +24,19 @@ DB_STRING=<your_mongodb_connection_string>
 PORT=<port_to_run_the_server_on>
 
 ### API Documentation
-User Routes
-GET /users            Fetch all users
-GET /users/:id        Fetch a single user by id
-POST /users           Create a new user
+User Routes  
+GET /users            Fetch all users  
+GET /users/:id        Fetch a single user by id  
+POST /users           Create a new user  
 
 Event Routes
-GET /                 Fetch all events
-GET /events/:id       Fetch a single event by id
-POST /events          Create a new event
-PUT /events/:id       Update an existing event
-DELETE /events/:id    Delete an event
+GET /                 Fetch all events  
+GET /events/:id       Fetch a single event by id  
+POST /events          Create a new event  
+PUT /events/:id       Update an existing event  
+DELETE /events/:id    Delete an event  
 
-Running the Project
-To run the project locally, use:
+Running the Project  
+To run the project locally, use:  
 npm start
 
