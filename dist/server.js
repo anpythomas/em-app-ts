@@ -18,8 +18,6 @@ const index_1 = __importDefault(require("./routes/index"));
 const events_1 = __importDefault(require("./routes/events"));
 const database_1 = __importDefault(require("./config/database"));
 const cors_1 = __importDefault(require("cors"));
-// //Use .env file in config folder
-// require("dotenv").config({ path: "./config/.env" });
 const app = (0, express_1.default)();
 const logger = (0, morgan_1.default)('short');
 function startApp() {
