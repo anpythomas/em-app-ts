@@ -1,5 +1,4 @@
 import express, { Application } from 'express';
-import mongoose from 'mongoose';
 import router from './routes';
 import connectDB from "./config/database";
 
