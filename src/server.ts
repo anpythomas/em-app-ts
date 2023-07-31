@@ -1,8 +1,10 @@
 import express, { Application } from 'express';
 import homeRouter from './routes/index';
 import eventRouter from './routes/events';
-import router from './routes';
+// import router from './routes';
 import connectDB from "./config/database";
+import cors from "cors";
+
 
 const app: Application = express();
 
@@ -12,7 +14,10 @@ require("dotenv").config({ path: "./config/.env" });
 //Connect To Database
 connectDB();
 
+app.use(cors());
+
 app.use(express.json());
+
 app.use('/', homeRouter);
 app.use('/events', eventRouter)
 
