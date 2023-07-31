@@ -39,4 +39,3 @@ DELETE /events/:id    Delete an event
 Running the Project  
 To run the project locally, use:  
 npm start
-
