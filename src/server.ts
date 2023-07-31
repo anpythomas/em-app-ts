@@ -1,4 +1,6 @@
 import express, { Application } from 'express';
+import homeRouter from './routes/index';
+import eventRouter from './routes/events';
 import router from './routes';
 import connectDB from "./config/database";
 
@@ -11,6 +13,7 @@ require("dotenv").config({ path: "./config/.env" });
 connectDB();
 
 app.use(express.json());
-app.use('/', router);
+app.use('/', homeRouter);
+app.use('/events', eventRouter)
 
 app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));

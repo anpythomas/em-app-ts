@@ -14,16 +14,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const Event_1 = __importDefault(require("../models/Event"));
 class EventController {
-    static getEventById(req, res) {
+    static getAllEvents(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            try { // *
-                const event = yield Event_1.default.findById(req.params.id);
-                if (event) {
-                    return res.status(200).json({ event });
-                }
-                else {
-                    return res.status(404).json({ error: 'Event not found' });
-                }
+            try {
+                const events = yield Event_1.default.find({});
+                return res.status(200).json({ events });
             }
             catch (err) {
                 return res.status(500).json({ error: err.message });
