@@ -1,6 +1,7 @@
 import express, { Application } from 'express';
 import homeRouter from './routes/index';
 import eventRouter from './routes/events';
+import router from './routes';
 import connectDB from "./config/database";
 
 const app: Application = express();
