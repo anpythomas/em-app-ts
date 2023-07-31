@@ -5,11 +5,6 @@ import eventRouter from './routes/events';
 import connectDB from "./config/database";
 import cors from "cors";
 
-import { env } from './config';
-
-// //Use .env file in config folder
-// require("dotenv").config({ path: "./config/.env" });
-
 const app: Application = express();
 const logger = morgan('short');
 
