@@ -1,9 +1,9 @@
 import express, { Application } from 'express';
 import morgan from 'morgan';
-import homeRouter from './routes/index';
-import eventRouter from './routes/events';
 import connectDB from "./config/database";
 import cors from "cors";
+import homeRouter from './routes/index';
+import eventRouter from './routes/events';
 
 const app: Application = express();
 const logger = morgan('short');
