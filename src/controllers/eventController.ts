@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Event, { IEvent } from '../models/events;
+import Event, { IEvent } from '../models/event';
 
 class EventController {
     static async getAllEvents(req: Request, res: Response) {
@@ -27,4 +27,4 @@ class EventController {
 
 export default EventController;
 
-#testing
+// #testing
