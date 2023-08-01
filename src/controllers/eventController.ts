@@ -26,5 +26,3 @@ class EventController {
 }
 
 export default EventController;
-
-// #testing
