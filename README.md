@@ -1,4 +1,4 @@
-# Event Pro API
+# Event Mgmt App
 A RESTful API built with Node.js, Express, TypeScript, and MongoDB. It provides endpoints to manage Users and Events. It's designed to serve data to a front-end application where the rendering happens.
 
 ## Technologies Used
